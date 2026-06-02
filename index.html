@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Mehedi Hasan Chowdhury Mahi - Portfolio</title>
+    <meta name="description" content="Portfolio of Md. Mehedi Hasan Chowdhury Mahi - Aspiring Software Engineer, CSE undergraduate at Varendra University, AI and Game Development enthusiast.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Immediate theme check to prevent flashing -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                document.documentElement.classList.add('light-theme');
+            }
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">MH MAHI</a>
+            
+            <div style="display: flex; align-items: center; gap: 0.5rem; order: 2;">
+                <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                
+                <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#extracurriculars" class="nav-link">Activities</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="bg-grid"></div>
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <span class="hero-welcome">Welcome to my Portfolio</span>
+                    <h1 class="hero-title">Hi, I'm <br><span>Md. Mehedi Hasan Chowdhury Mahi</span></h1>
+                    <h2 class="hero-subtitle">Aspiring <span></span></h2>
+                    <p class="hero-desc">
+                        Aspiring Software Engineer and Computer Science & Engineering (CSE) undergraduate. 
+                        Passionate about Software Development, Artificial Intelligence, and Game Development. 
+                        Eager to build innovative, real-world solutions that make an impact.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Let's Talk</a>
+                        <a href="Md. Mehedi Hasan Chowdhury Mahi [Updated CV].pdf" class="btn btn-secondary" target="_blank"><i class="fa-solid fa-download"></i> Download CV</a>
+                    </div>
+                    
+                    <div class="hero-socials" style="display: flex; gap: 1rem; margin-top: 1.5rem; font-size: 1.4rem; align-items: center;">
+                        <span style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-family: var(--font-heading); font-weight: 600;">Connect:</span>
+                        <a href="https://github.com/its-MahiOP" target="_blank" class="social-link" title="GitHub" style="color: var(--text-secondary); transition: var(--transition-fast);"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/md-mehedi-hasan-chowdhury-mahi" target="_blank" class="social-link" title="LinkedIn" style="color: var(--text-secondary); transition: var(--transition-fast);"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/mdmehedihasan.chowdhury.52" target="_blank" class="social-link" title="Facebook" style="color: var(--text-secondary); transition: var(--transition-fast);"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/its__mahi__op/" target="_blank" class="social-link" title="Instagram" style="color: var(--text-secondary); transition: var(--transition-fast);"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:mehedimahi07@gmail.com" class="social-link" title="Email" style="color: var(--text-secondary); transition: var(--transition-fast);"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-val">3.77</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-val">3rd</span>
+                            <span class="stat-label">Year CSE</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-val">8+</span>
+                            <span class="stat-label">Leadership Roles</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper reveal">
+                    <div class="hero-image-frame">
+                        <!-- Profile image source defaults to local profile.png. The user can add their image. -->
+                        <img src="profile.png" alt="Md. Mehedi Hasan Chowdhury Mahi" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-title-wrapper reveal">
+                    <span class="section-tag">Intro</span>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">A brief overview of my educational background, career goals, and details.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-details reveal">
+                        <h3 class="glow-text" style="font-size: 1.8rem; margin-bottom: 1rem; font-family: var(--font-heading);">My Objective</h3>
+                        <p class="about-text">
+                            I am a highly motivated Computer Science and Engineering undergraduate with strong academic performance. 
+                            My journey is driven by an intense passion for coding, building products, and exploring technical paradigms. 
+                            I love finding creative and efficient answers to complex problems.
+                        </p>
+                        <p class="about-text">
+                            Currently, I am looking to contribute to real-world software and engineering initiatives. I am continuously 
+                            learning new tools, expanding my skillset, and looking for internship or entry-level opportunities where 
+                            I can add value while growing technically.
+                        </p>
+                    </div>
+
+                    <div class="reveal">
+                        <div class="glass-card about-info-grid">
+                            <div class="info-card">
+                                <span class="info-card-label">Degree</span>
+                                <span class="info-card-value">B.Sc. in CSE</span>
+                            </div>
+                            <div class="info-card">
+                                <span class="info-card-label">University</span>
+                                <span class="info-card-value">Varendra University</span>
+                            </div>
+                            <div class="info-card">
+                                <span class="info-card-label">Current CGPA</span>
+                                <span class="info-card-value">3.77 / 4.00</span>
+                            </div>
+                            <div class="info-card">
+                                <span class="info-card-label">Location</span>
+                                <span class="info-card-value">Rajshahi, Bangladesh</span>
+                            </div>
+                            <div class="info-card" style="grid-column: span 2;">
+                                <span class="info-card-label">LinkedIn</span>
+                                <span class="info-card-value"><a href="https://www.linkedin.com/in/md-mehedi-hasan-chowdhury-mahi" target="_blank">linkedin.com/in/md-mehedi-hasan-chowdhury-mahi <i class="fa-solid fa-up-right-from-square" style="font-size: 0.8rem;"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-title-wrapper reveal">
+                    <span class="section-tag">Expertise</span>
+                    <h2 class="section-title">My Skills</h2>
+                    <p class="section-subtitle">The languages, frameworks, AI tools, and soft skills that form my core competencies.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="glass-card skills-category reveal">
+                        <h3 class="category-title"><i class="fa-solid fa-code"></i> Languages</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-solid fa-terminal"></i> C++</span>
+                            <span class="skill-badge"><i class="fa-solid fa-terminal"></i> C</span>
+                            <span class="skill-badge"><i class="fa-brands fa-java"></i> Java</span>
+                            <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- AI & Modern Productivity Tools -->
+                    <div class="glass-card skills-category reveal">
+                        <h3 class="category-title"><i class="fa-solid fa-microchip"></i> AI Tools</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge highlight"><i class="fa-solid fa-bolt"></i> Google Antigravity</span>
+                            <span class="skill-badge highlight"><i class="fa-solid fa-brain"></i> Lovable</span>
+                            <span class="skill-badge"><i class="fa-solid fa-robot"></i> ChatGPT</span>
+                            <span class="skill-badge"><i class="fa-solid fa-sparkles"></i> Google Gemini</span>
+                            <span class="skill-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Claude</span>
+                            <span class="skill-badge"><i class="fa-solid fa-rocket"></i> AI Productivity Tools</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Softwares -->
+                    <div class="glass-card skills-category reveal">
+                        <h3 class="category-title"><i class="fa-solid fa-database"></i> Systems & Tools</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-solid fa-server"></i> SQL Server (SSMS)</span>
+                            <span class="skill-badge"><i class="fa-solid fa-palette"></i> Canva</span>
+                            <span class="skill-badge"><i class="fa-regular fa-file-word"></i> MS Office Word</span>
+                            <span class="skill-badge"><i class="fa-regular fa-file-powerpoint"></i> PowerPoint</span>
+                            <span class="skill-badge"><i class="fa-regular fa-file-excel"></i> Excel</span>
+                            <span class="skill-badge"><i class="fa-solid fa-file-lines"></i> Google Docs/Slides</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills & Languages -->
+                    <div class="glass-card skills-category reveal" style="grid-column: span 1;">
+                        <h3 class="category-title"><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-solid fa-circle-check"></i> Leadership</span>
+                            <span class="skill-badge"><i class="fa-solid fa-circle-check"></i> Team Collaboration</span>
+                            <span class="skill-badge"><i class="fa-solid fa-circle-check"></i> Communication</span>
+                            <span class="skill-badge"><i class="fa-solid fa-circle-check"></i> Presentation</span>
+                            <span class="skill-badge"><i class="fa-solid fa-circle-check"></i> Time Management</span>
+                            <span class="skill-badge"><i class="fa-solid fa-circle-check"></i> Adaptability</span>
+                            <span class="skill-badge"><i class="fa-solid fa-circle-check"></i> Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-title-wrapper reveal">
+                    <span class="section-tag">Career</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-subtitle">My professional journey and hands-on contributions in the tech industry.</p>
+                </div>
+
+                <div class="timeline reveal">
+                    <!-- Timeline Item -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024</span>
+                            <h3 class="timeline-role">Lite App Developer</h3>
+                            <h4 class="timeline-company">Bdapps</h4>
+                            <ul class="timeline-bullets">
+                                <li>Developed SMS-based lite applications using the Bdapps platform.</li>
+                                <li>Gained hands-on experience with telecom-based application constraints and developer environments.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-title-wrapper reveal">
+                    <span class="section-tag">Creations</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">A showcase of software developments and platforms I have worked on.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project Card 1: HomeSchool -->
+                    <div class="glass-card project-card reveal">
+                        <img src="MillionX Bangladesh – 2026/HomeSchool Project.png" alt="HomeSchool Learning Platform" class="project-card-image" onerror="this.style.display='none'">
+                        <div class="project-header">
+                            <span class="project-tag"><i class="fa-solid fa-graduation-cap"></i> AI Education Platform</span>
+                            <h3 class="project-title">HomeSchool</h3>
+                        </div>
+                        <p class="project-desc">
+                            An AI-Assisted Learning Platform designed to provide a curriculum-aligned interactive learning system for students. 
+                            Features integrations with modern AI models to assist personalized student learning, progress tracking, and custom quizzes.
+                        </p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>OpenAI API</span>
+                            <span>Personalized Learning</span>
+                            <span>Education Tech</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://homeschool.moonx.dev/" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website</a>
+                            <a href="#contact" class="project-link"><i class="fa-solid fa-envelope"></i> Inquire Project</a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: Space Weather Explorer -->
+                    <div class="glass-card project-card reveal">
+                        <img src="NASA Space Apps Challenge – 2025/Space Weather Explorer Project.png" alt="Space Weather Explorer Project" class="project-card-image" onerror="this.style.display='none'">
+                        <div class="project-header">
+                            <span class="project-tag"><i class="fa-solid fa-user-astronaut"></i> NASA Space Apps 2025</span>
+                            <h3 class="project-title">Space Weather Explorer</h3>
+                        </div>
+                        <p class="project-desc">
+                            An interactive platform designed to visualize and explore space weather phenomena. Developed as part of the NASA Space Apps Challenge 2025 to make complex space weather data accessible, interactive, and engaging for everyone.
+                        </p>
+                        <div class="project-tech">
+                            <span>Space Weather Data</span>
+                            <span>Data Visualization</span>
+                            <span>Interactive Simulation</span>
+                            <span>Science Tech</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://lovable.dev/projects/ad46ede7-e980-406f-ab3e-b0c2f7f3e90f" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                            <a href="#contact" class="project-link"><i class="fa-solid fa-envelope"></i> Inquire Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <div class="section-title-wrapper reveal">
+                    <span class="section-tag">Milestones</span>
+                    <h2 class="section-title">Achievements</h2>
+                    <p class="section-subtitle">Recognitions and competitions where I challenged my skills and succeeded.</p>
+                </div>
+
+                <div class="achievements-grid">
+                    <!-- Achievement 1: Hult Prize -->
+                    <div class="glass-card achievement-card reveal">
+                        <div class="achievement-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <span class="achievement-meta">Hult Prize at Varendra University – 2025-26</span>
+                        <h3 class="achievement-title">Campaign Coordinator & Branding Team</h3>
+                        <p class="achievement-desc">Led marketing campaigns, managed promotions, and coordinated event logistics to successfully organize the global Hult Prize challenge chapter.</p>
+                        
+                        <!-- Photo Gallery -->
+                        <div class="achievement-gallery">
+                            <div class="achievement-thumb-wrapper">
+                                <img src="Hult Prize at Varendra University 2025-26/My Certificate, ID Card, and Crest.jpeg" alt="Hult Prize - Certificate, ID Card, and Crest" class="achievement-thumb">
+                            </div>
+                            <div class="achievement-thumb-wrapper">
+                                <img src="Hult Prize at Varendra University 2025-26/Our Mentor Handing Over My Certificate To Me.jpeg" alt="Hult Prize - Our Mentor Handing Over My Certificate" class="achievement-thumb">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 2: MillionX Bangladesh -->
+                    <div class="glass-card achievement-card reveal">
+                        <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <span class="achievement-meta">MillionX Bangladesh – 2026</span>
+                        <h3 class="achievement-title">National AI Build-a-thon – Finalist</h3>
+                        <p class="achievement-desc">Qualified for the final round with team "NextGen Learners", designing curriculum-aligned AI learning solutions for classrooms.</p>
+                        
+                        <!-- Photo Gallery -->
+                        <div class="achievement-gallery">
+                            <div class="achievement-thumb-wrapper">
+                                <img src="MillionX Bangladesh – 2026/Me at the Final Event.jpeg" alt="National AI Build-a-thon - Me at the Final Event" class="achievement-thumb">
+                            </div>
+                            <div class="achievement-thumb-wrapper">
+                                <img src="MillionX Bangladesh – 2026/My Certificate of National AI BUILD-A-THON.png" alt="National AI Build-a-thon - My Certificate" class="achievement-thumb">
+                            </div>
+                            <div class="achievement-thumb-wrapper">
+                                <img src="MillionX Bangladesh – 2026/Team NextGen Learners at the Final Event.jpeg" alt="National AI Build-a-thon - Team NextGen Learners at the Final Event" class="achievement-thumb">
+                            </div>
+                            <div class="achievement-thumb-wrapper">
+                                <img src="MillionX Bangladesh – 2026/Team NextGen Learners.png" alt="National AI Build-a-thon - Team NextGen Learners Group Photo" class="achievement-thumb">
+                                <div class="achievement-thumb-overlay">+2</div>
+                            </div>
+                            <div class="achievement-thumb-wrapper" style="display: none;">
+                                <img src="MillionX Bangladesh – 2026/Selected for the Final Round Announcement.png" alt="National AI Build-a-thon - Selected for Final Round Announcement" class="achievement-thumb">
+                            </div>
+                            <div class="achievement-thumb-wrapper" style="display: none;">
+                                <img src="MillionX Bangladesh – 2026/HomeSchool Project.png" alt="National AI Build-a-thon - HomeSchool Project Details" class="achievement-thumb">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 3: NASA Space Apps -->
+                    <div class="glass-card achievement-card reveal">
+                        <div class="achievement-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+                        <span class="achievement-meta">NASA Space Apps Challenge – 2025</span>
+                        <h3 class="achievement-title">NASA Space Apps Challenge – Participant</h3>
+                        <p class="achievement-desc">Collaborated in "Team Talestra" to build interactive space science visualization platforms addressing global NASA-defined problems.</p>
+                        
+                        <!-- Photo Gallery -->
+                        <div class="achievement-gallery">
+                            <div class="achievement-thumb-wrapper">
+                                <img src="NASA Space Apps Challenge – 2025/My Certificate of NASA Space Apps Challenge.jpeg" alt="NASA Space Apps - My Participant Certificate" class="achievement-thumb">
+                            </div>
+                            <div class="achievement-thumb-wrapper">
+                                <img src="NASA Space Apps Challenge – 2025/Team Talestra.png" alt="NASA Space Apps - Team Talestra Group Photo" class="achievement-thumb">
+                            </div>
+                            <div class="achievement-thumb-wrapper">
+                                <img src="NASA Space Apps Challenge – 2025/Team Talestra Logo.jpg" alt="NASA Space Apps - Team Talestra Logo" class="achievement-thumb">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 4: Robo-Soccer -->
+                    <div class="glass-card achievement-card reveal">
+                        <div class="achievement-icon"><i class="fa-solid fa-robot"></i></div>
+                        <span class="achievement-meta">Robo-Soccer Competition – 2024</span>
+                        <h3 class="achievement-title">Robo-Soccer Competition – Participant</h3>
+                        <p class="achievement-desc">Built a customized physical soccer-playing robot and competed at the Varendra University Tech Carnival track.</p>
+                        
+                        <!-- Photo Gallery -->
+                        <div class="achievement-gallery">
+                            <div class="achievement-thumb-wrapper">
+                                <img src="Robo-Soccer – 2024/Our Robo-Soccer Bot.jpeg" alt="Robo-Soccer - Our Custom Soccer Bot" class="achievement-thumb">
+                            </div>
+                            <div class="achievement-thumb-wrapper">
+                                <img src="Robo-Soccer – 2024/Team Spark in the track.jpeg" alt="Robo-Soccer - Team Spark Bot in the Track" class="achievement-thumb">
+                            </div>
+                            <div class="achievement-thumb-wrapper">
+                                <img src="Robo-Soccer – 2024/Team Spark.jpeg" alt="Robo-Soccer - Team Spark Members" class="achievement-thumb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Extracurricular Activities Section -->
+        <section id="extracurriculars" class="section">
+            <div class="container">
+                <div class="section-title-wrapper reveal">
+                    <span class="section-tag">Leadership</span>
+                    <h2 class="section-title">Extracurricular Activities</h2>
+                    <p class="section-subtitle">Leadership and ambassador roles that I held across university chapters and organizations.</p>
+                </div>
+
+                <div class="extracurricular-grid">
+                    <!-- Card 1 -->
+                    <div class="glass-card extra-card reveal">
+                        <span class="extra-role">Campus Team Member</span>
+                        <span class="extra-org">Excellence Bangladesh</span>
+                        <span class="extra-date">2026 - 2027</span>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="glass-card extra-card reveal">
+                        <span class="extra-role">Campus Ambassador</span>
+                        <span class="extra-org">InfoGram</span>
+                        <span class="extra-date">2026 - 2027</span>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="glass-card extra-card reveal">
+                        <span class="extra-role">Campaign Coordinator</span>
+                        <span class="extra-org">Hult Prize at Varendra University</span>
+                        <span class="extra-date">2025 - 2026</span>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="glass-card extra-card reveal">
+                        <span class="extra-role">Branding & Promotion Team</span>
+                        <span class="extra-org">Hult Prize at Varendra University</span>
+                        <span class="extra-date">2024 - 2025</span>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="glass-card extra-card reveal">
+                        <span class="extra-role">Executive Member</span>
+                        <span class="extra-org">BASIS Students' Forum (Varendra University)</span>
+                        <span class="extra-date">2024 - 2025</span>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="glass-card extra-card reveal">
+                        <span class="extra-role">Campus Ambassador</span>
+                        <span class="extra-org">Progsity</span>
+                        <span class="extra-date">2025 - 2026</span>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="glass-card extra-card reveal">
+                        <span class="extra-role">Event Manager</span>
+                        <span class="extra-org">Bdapps Varendra University Chapter</span>
+                        <span class="extra-date">2024 - 2025</span>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="glass-card extra-card reveal">
+                        <span class="extra-role">General Member</span>
+                        <span class="extra-org">Robotics Society of Varendra University (RSVU)</span>
+                        <span class="extra-date">2023 - 2026</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-title-wrapper reveal">
+                    <span class="section-tag">Get in touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <p class="section-subtitle">Have a project, opportunity, or question? Feel free to drop a message.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact info columns -->
+                    <div class="contact-info reveal">
+                        <div class="contact-header">
+                            <h3>Let's collaborate!</h3>
+                            <p>I am currently open to internship opportunities, remote work, or collaborative open-source projects.</p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <!-- Email -->
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value"><a href="mailto:mehedimahi07@gmail.com">mehedimahi07@gmail.com</a></span>
+                                </div>
+                            </div>
+                            <!-- Phone -->
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Call / WhatsApp</span>
+                                    <span class="contact-value"><a href="tel:+8801609562593">+880 1609 562 593</a></span>
+                                </div>
+                            </div>
+                            <!-- LinkedIn -->
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+                                <div class="contact-details">
+                                    <span class="contact-label">LinkedIn</span>
+                                    <span class="contact-value"><a href="https://www.linkedin.com/in/md-mehedi-hasan-chowdhury-mahi" target="_blank">in/md-mehedi-hasan-chowdhury-mahi</a></span>
+                                </div>
+                            </div>
+                            <!-- Location -->
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Rajshahi, Bangladesh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact form -->
+                    <div class="glass-card reveal">
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="name@domain.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-input" placeholder="Hello, I would like to talk about..." required></textarea>
+                            </div>
+                            <div id="formAlert" class="form-alert"></div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; border: none;"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-text">
+                <p>&copy; 2026 Md. Mehedi Hasan Chowdhury Mahi. All rights reserved.</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/its-MahiOP" target="_blank" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/md-mehedi-hasan-chowdhury-mahi" target="_blank" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/mdmehedihasan.chowdhury.52" target="_blank" class="social-link" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/its__mahi__op/" target="_blank" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:mehedimahi07@gmail.com" class="social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+8801609562593" class="social-link" title="Phone"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Galleries -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <button id="lightboxClose" class="lightbox-close" aria-label="Close gallery">&times;</button>
+        <button id="lightboxPrev" class="lightbox-nav prev" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="lightboxNext" class="lightbox-nav next" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="lightbox-container">
+            <div class="lightbox-content">
+                <img id="lightboxImage" src="" alt="Lightbox View" class="lightbox-image">
+            </div>
+            <div id="lightboxCaption" class="lightbox-caption">Photo Caption</div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
