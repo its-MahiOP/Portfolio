@@ -1,0 +1,47 @@
+# License
+
+This repository uses a dual-licensing model to distinguish between the open-source codebase template and the private personal content of the author.
+
+---
+
+## 💻 Codebase Template (MIT License)
+
+All code files—specifically the CSS files (*.css), JavaScript files (*.js), configuration files (*.toml), and the skeletal layout structures within the HTML files (*.html)—are licensed under the **MIT License**.
+
+Copyright (c) 2026 Md. Mehedi Hasan Chowdhury Mahi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## 👤 Personal Content (All Rights Reserved)
+
+All personal assets, textual content, branding, and images belong exclusively to **Md. Mehedi Hasan Chowdhury Mahi**.
+
+This includes, but is not limited to:
+- The specific textual content representing the CV, biographical summaries, skills, and experiences.
+- All photographs, logos, certificates, and media assets located inside:
+  - `Hult Prize at Varendra University 2025-26/`
+  - `MillionX Bangladesh – 2026/`
+  - `NASA Space Apps Challenge – 2025/`
+  - `Robo-Soccer – 2024/`
+  - `profile.png`
+- The downloadable CV file `Md. Mehedi Hasan Chowdhury Mahi [Updated CV].pdf`.
+
+**Under standard copyright law, all rights are reserved for these personal assets.** You may not copy, republish, distribute, hotlink, or use these assets in your own portfolio without explicit, written permission from the owner.
