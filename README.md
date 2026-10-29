@@ -6,9 +6,8 @@
 
 A modern, responsive personal portfolio for **Md. Mehedi Hasan Chowdhury Mahi**, a Computer Science & Engineering undergraduate and full-stack developer. The site brings together projects, research, work experience, achievements, leadership activities, and contact information in a single-page React application.
 
-**Live sites**
+**Live site**
 
-- GitHub Pages: [its-mahiop.github.io/Portfolio](https://its-mahiop.github.io/Portfolio)
 - Netlify: [mehedi-hasan-mahi.netlify.app](https://mehedi-hasan-mahi.netlify.app)
 
 ---
