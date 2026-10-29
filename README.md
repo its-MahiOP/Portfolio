@@ -1,95 +1,209 @@
-# Md. Mehedi Hasan Chowdhury Mahi - Personal Portfolio Website
+# Md. Mehedi Hasan Chowdhury Mahi — Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-badge-id/deploy-status)](https://homeschool.moonx.dev/) <!-- Note: User can replace with actual netlify deploy status badge if desired -->
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react&logoColor=white)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-A modern, high-performance, dark-theme-first, and fully responsive personal portfolio website showcasing the skills, qualifications, achievements, and experiences of **Md. Mehedi Hasan Chowdhury Mahi**.
+A modern, responsive personal portfolio for **Md. Mehedi Hasan Chowdhury Mahi**, a Computer Science & Engineering undergraduate and full-stack developer. The site brings together projects, research, work experience, achievements, leadership activities, and contact information in a single-page React application.
 
-Live Website: [https://its-mahiop.github.io/Portfolio/](https://github.com/its-MahiOP) *(or your deployed custom link)*
+**Live sites**
 
----
-
-## ✨ Features
-
-- **🌓 Dynamic Theme Toggle**: Seamless transition between dark and light themes (defaults to dark mode with theme preference saved in `localStorage`).
-- **📱 Responsive Layout**: Fully optimized for mobile, tablet, and desktop screens using modern CSS Grid and Flexbox techniques.
-- **⚡ Entrance Animations**: Elegant scroll-based reveal animations powered by the `IntersectionObserver` API.
-- **✍️ Typewriter Effect**: Interactive subtitle typing animation highlighting key professional roles.
-- **🧭 Scroll Spy**: Automatically highlights the active section in the navigation menu as the user scrolls.
-- **🖼️ Photo Gallery Lightbox**: An interactive lightbox modal for exploring certificates and event photographs from competitions.
-- **✉️ Interactive Contact Form**: Full client-side validation with real-time feedback.
+- GitHub Pages: [its-mahiop.github.io/Portfolio](https://its-mahiop.github.io/Portfolio)
+- Netlify: [mehedi-hasan-mahi.netlify.app](https://mehedi-hasan-mahi.netlify.app)
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## Highlights
 
-- **Markup & Structure**: HTML5 (Semantic elements)
-- **Styling & Layout**: Vanilla CSS3 (Custom properties/variables, Glassmorphism, CSS Grid & Flexbox, smooth transitions)
-- **Behavior & Logic**: Vanilla JavaScript (ES6+, DOM Manipulation, `IntersectionObserver` API)
-- **Icons**: [FontAwesome v6](https://fontawesome.com/)
-- **Typography**: [Google Fonts (Inter & Outfit)](https://fonts.google.com/)
-- **Hosting / CDN**: Configured for deployment on **Netlify** (optimized cache control and security headers in `netlify.toml`)
+- Responsive single-page layout with nine content sections
+- Dark and light themes with the preference saved in `localStorage`
+- Typewriter animation in the hero section
+- Scroll-reveal animations using `IntersectionObserver`
+- Scroll-spy navigation that highlights the active section
+- Project cards with live links and an inquiry action
+- Research publication card with authors, venue, and keywords
+- Achievement galleries with a keyboard-accessible lightbox
+- CV download from the hero section
+- Contact form powered by FormSubmit without a custom backend
 
 ---
 
-## 📂 Project Structure
+## Portfolio Sections
+
+| Section | Content |
+| --- | --- |
+| Home | Introduction, profile photo, social links, CV download, and quick stats |
+| About | Academic background, career objective, university, CGPA, and location |
+| Skills | Languages, web technologies, databases/auth, tools, and core CS concepts |
+| Experience | Work history at Fixensy and Bdapps |
+| Projects | HomeSchool, Space Weather Explorer, and Bazar Dor |
+| Research | UCICS 2026 paper on machine-learning classifiers for credit-card fraud detection |
+| Achievements | Infinity AI BuildFest 2026, Hult Prize, MillionX Bangladesh, NASA Space Apps, and Robo-Soccer |
+| Activities | Campus ambassador, leadership, and committee roles |
+| Contact | Email, LinkedIn, GitHub, location, and contact form |
+
+### Featured projects
+
+- **HomeSchool** — AI-assisted learning platform aligned with the NCTB curriculum for Classes 6–12. [Live site](https://home-school-demo.vercel.app)
+- **Space Weather Explorer** — Interactive space-weather visualization built for NASA Space Apps Challenge 2025. [Project link](https://lovable.dev/projects/ad46ede7-e980-406f-ab3e-b0c2f7f3e90f)
+- **Bazar Dor** — Market price tracking and comparison app for essential commodities in Bangladesh. [Live site](https://bazar-dor-psi.vercel.app)
+
+---
+
+## Tech Stack
+
+| Area | Technology |
+| --- | --- |
+| UI | React 18 |
+| Build tool | Vite 5 |
+| Styling | Vanilla CSS3, CSS variables, Grid, Flexbox |
+| Animation | `IntersectionObserver`, CSS transitions |
+| Icons | FontAwesome 6 |
+| Fonts | Google Fonts (Inter and Outfit) |
+| Contact form | FormSubmit AJAX endpoint |
+| Deployment | Netlify (`netlify.toml`) and GitHub Pages |
+
+---
+
+## Project Structure
 
 ```text
-├── Hult Prize at Varendra University 2025-26/  # Images and certificates from Hult Prize
-├── MillionX Bangladesh – 2026/                # Images/screenshots from the AI Build-a-thon
-├── NASA Space Apps Challenge – 2025/          # Images/assets from NASA Space Apps
-├── Robo-Soccer – 2024/                        # Images of the custom robot and competition
-├── index.html                                 # Core entry page
-├── styles.css                                 # Main stylesheet defining design system tokens
-├── script.js                                  # Handles theme toggles, animations, lightbox, and form validation
-├── netlify.toml                               # Hosting configuration with custom security/cache headers
-├── profile.png                                # Portfolio profile picture
-├── Md. Mehedi Hasan Chowdhury Mahi [Updated CV].pdf # User CV download link
-└── README.md                                  # Project documentation (this file)
+Portfolio/
+├── public/                                      # Static assets copied into dist/
+│   ├── Project Images/                          # Project screenshots
+│   ├── The Infinity AI BuildFest 2026/          # Achievement gallery
+│   ├── Hult Prize at Varendra University 2025-26/
+│   ├── MillionX Bangladesh – 2026/
+│   ├── NASA Space Apps Challenge – 2025/
+│   ├── Robo-Soccer – 2024/
+│   ├── profile.png                              # Profile photo
+│   └── Md Mehedi Hasan Chowdhury Mahi.pdf       # Downloadable CV
+├── src/
+│   ├── components/                              # One component per section
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Research.jsx
+│   │   ├── Achievements.jsx
+│   │   ├── Extracurriculars.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Footer.jsx
+│   │   └── Lightbox.jsx
+│   ├── hooks/useReveal.js                       # Scroll-reveal helper
+│   ├── App.jsx                                  # Page composition and theme state
+│   ├── main.jsx                                 # React entry point
+│   └── index.css                                # Global styles and design tokens
+├── index.html                                   # Vite HTML entry
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── netlify.toml                                 # Build settings and cache/security headers
+├── AGENTS.md                                    # Notes for coding agents
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-## 🚀 Running Locally
+## Getting Started
 
-Since this is a static website, you can run it locally without any build steps:
+### Prerequisites
 
-### Option 1: Direct File Open
-Double-click [index.html](file:///c:/Users/hasan/OneDrive/Documents/Portfolio/index.html) in your file explorer to open it in your preferred web browser.
+- Node.js 18 or newer
+- npm
 
-### Option 2: Live Server (Recommended for development)
-To run a local server with auto-reload capabilities:
+### Install and run
 
-**Using Node.js (`npx`):**
 ```bash
-npx http-server .
+npm install
+npm run dev
 ```
 
-**Using Python:**
-```bash
-# Python 3
-python -m http.server 8000
-```
-Then visit `http://localhost:8000` in your web browser.
+Open the local URL printed by Vite.
+
+### Available scripts
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Create a production build in `dist/` |
+| `npm run preview` | Preview the production build locally |
+
+There is no separate lint, typecheck, or test script. Use `npm run build` as the main verification step.
+
+The build output is generated and ignored by Git. Do not commit `dist/` or `node_modules/`.
+
+### Windows note
+
+If PowerShell blocks `npm.ps1`, use `npm.cmd` instead. Optional local helpers `run_dev.bat` and `run_dev.sh` are machine-specific and ignored by Git.
 
 ---
 
-## ⚙️ How to Customize
+## Customization
 
-1. **Change Profile Photo**: Replace [profile.png](file:///c:/Users/hasan/OneDrive/Documents/Portfolio/profile.png) with your own photo.
-2. **Update Curriculum Vitae (CV)**: Replace the [Md. Mehedi Hasan Chowdhury Mahi [Updated CV].pdf](file:///c:/Users/hasan/OneDrive/Documents/Portfolio/Md. Mehedi Hasan Chowdhury Mahi [Updated CV].pdf) file with your latest CV (ensuring the filename matches or updating the link in `index.html` on line 76).
-3. **Edit Content**: Open [index.html](file:///c:/Users/hasan/OneDrive/Documents/Portfolio/index.html) and search for the text sections (About, Skills, Experience, Achievements, etc.) to modify it.
-4. **Modify Style**: Customize the CSS variables in the `:root` and `.light-theme` blocks at the top of [styles.css](file:///c:/Users/hasan/OneDrive/Documents/Portfolio/styles.css) to change the color palette, fonts, or gradients.
+### Content
+
+Each section keeps its data in a local array at the top of its component:
+
+- Projects: `src/components/Projects.jsx`
+- Achievements: `src/components/Achievements.jsx`
+- Research: `src/components/Research.jsx`
+- Skills: `src/components/Skills.jsx`
+- Experience: `src/components/Experience.jsx`
+- Activities: `src/components/Extracurriculars.jsx`
+- Navigation links: `src/components/Navbar.jsx`
+- Social links: `src/components/Footer.jsx`
+
+### Images and CV
+
+Place new assets under `public/` and reference them from components with a root-relative URL:
+
+```jsx
+image: "/Project Images/My Project.png"
+```
+
+Do not prefix public asset paths with `/public/`; Vite serves the contents of `public/` from the site root and copies them into `dist/`.
+
+- Profile photo: `public/profile.png`
+- CV: `public/Md Mehedi Hasan Chowdhury Mahi.pdf`
+- Project screenshots: `public/Project Images/`
+- Achievement photos: the matching folder under `public/`
+
+If you rename the CV, update the download link in `src/components/Hero.jsx`. Raw `.NEF` originals are ignored by Git and should stay outside `public/` so they are not copied into production builds.
+
+### Styling and theme
+
+Global styles and design tokens live in `src/index.css`. The color palette, gradients, typography, and light-theme overrides are defined with CSS variables in `:root` and `html.light-theme`.
+
+Theme state is controlled in `src/App.jsx` and persisted under the `theme` key in `localStorage`. The inline script in `index.html` applies the saved theme before React loads to avoid a flash.
+
+### Contact form
+
+`src/components/Contact.jsx` posts to a FormSubmit AJAX endpoint. To use a different recipient, update the endpoint URL and the email shown in the contact details.
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
-This project is configured with a [netlify.toml](file:///c:/Users/hasan/OneDrive/Documents/Portfolio/netlify.toml) file ready for hosting on **Netlify**.
+### Netlify
 
-1. Connect your GitHub repository to Netlify.
-2. Set the build command to `None` (empty) and publish directory to `.` (root).
-3. Netlify will automatically handle HTTPS, compression, and apply the performance caching rules specified in the `netlify.toml` headers.
+`netlify.toml` is configured to:
+
+- Run `npm run build`
+- Publish `dist/`
+- Apply security headers and long-lived cache headers for CSS, JS, images, and PDFs
+
+Connect the repository to Netlify and it will use these settings automatically.
+
+### GitHub Pages
+
+The GitHub Pages site is served from `/Portfolio/`, while Vite defaults to `/`. Before a GitHub Pages build, set `base: "/Portfolio/"` in `vite.config.js`. Netlify deployments should keep the default `/` base.
+
+---
+
+## License
+
+The codebase is available under the MIT License. Personal content, photographs, certificates, and the CV are excluded from the MIT license and remain all rights reserved. See [LICENSE](LICENSE) for details.

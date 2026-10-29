@@ -13,6 +13,18 @@ desktop.ini
 # Logs
 *.log
 
+node_modules
+dist/
+
+# Raw photo originals — keep outside public/ so Vite does not copy them into dist/
+*.NEF
+*.nef
+
+# Machine-specific dev helpers
+run_dev.bat
+run_dev.sh
+run_node.bat
+
 # Temporary files
 *.tmp
 *.temp

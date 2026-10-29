@@ -6,7 +6,7 @@ This repository uses a dual-licensing model to distinguish between the open-sour
 
 ## 💻 Codebase Template (MIT License)
 
-All code files—specifically the CSS files (*.css), JavaScript files (*.js), configuration files (*.toml), and the skeletal layout structures within the HTML files (*.html)—are licensed under the **MIT License**.
+All code files—specifically the CSS files (_.css), JavaScript/JSX files (_.js, _.jsx), configuration files (_.toml, _.json), and the skeletal layout structures within the HTML files (_.html)—are licensed under the **MIT License**.
 
 Copyright (c) 2026 Md. Mehedi Hasan Chowdhury Mahi
 
@@ -35,13 +35,14 @@ SOFTWARE.
 All personal assets, textual content, branding, and images belong exclusively to **Md. Mehedi Hasan Chowdhury Mahi**.
 
 This includes, but is not limited to:
+
 - The specific textual content representing the CV, biographical summaries, skills, and experiences.
 - All photographs, logos, certificates, and media assets located inside:
-  - `Hult Prize at Varendra University 2025-26/`
-  - `MillionX Bangladesh – 2026/`
-  - `NASA Space Apps Challenge – 2025/`
-  - `Robo-Soccer – 2024/`
-  - `profile.png`
-- The downloadable CV file `Md. Mehedi Hasan Chowdhury Mahi [Updated CV].pdf`.
+    - `public/Hult Prize at Varendra University 2025-26/`
+    - `public/MillionX Bangladesh – 2026/`
+    - `public/NASA Space Apps Challenge – 2025/`
+    - `public/Robo-Soccer – 2024/`
+    - `public/profile.png`
+- The downloadable CV file `public/Md Mehedi Hasan Chowdhury Mahi.pdf`.
 
 **Under standard copyright law, all rights are reserved for these personal assets.** You may not copy, republish, distribute, hotlink, or use these assets in your own portfolio without explicit, written permission from the owner.
